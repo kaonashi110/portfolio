@@ -3,72 +3,104 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+  <meta name="viewport" conten animate__animated animate__fadeInt="width=device-width, initial-scale=1.0">
+  <title>伊藤千咲 - プロフィール</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <figure class="header__logo">
-      <img src="./assets/images/logo.png" alt="ロゴ">
-    </figure>
-    <nav class="header__nav">
-      <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#works">works</a></li>
-        <li><a href="#skill">skill</a></li>
-      </ul>
-    </nav>
+    <h1 class="header__title">Chisaki ito</h1>
+    <p class="header__lead">Front-End Developer</p>
   </header>
+  <article>
+    <section id="about" class="about">
+      <div class="inner animated wow fadeIn">
+        <div class="wrapper">
+          <h2 class="title-type01 wow fadeInUp">
+            <span class="en animated wow fadeIn">about</span>
+            <span class="ja">私について</span>
+          </h2>
+          <div class="about__container">
+            <figure class="about__image"><img src="./assets/images/about_01.png" alt="私について"></figure>
+            <div class="about__info">
+              <p class="info_title">Chisaki Ito</p>
+              <p class="info_lead">
+                大阪生まれ兵庫育ち。<br><br>
+                ショップ店員からWeb業界へ転職。<br>
+                Web制作会社で2年間マークアップエンジニアを経験し、フロントエンドのスキルを磨くために勉強中。<br><br>
+                “<span class="em">シンプルでユーザビリティの高いデザイン</span>”、“<span class="em">ちょっとワクワクする仕掛け</span>”を実装したい。<br><br>
+                趣味は音楽とアニメとお酒を飲むこと。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- // .about -->
 
-  <div class="hero">
-    <div class="hero__wrapper">
-      <h1 class="hero__title">Ito's Portfolio Site</h1>
-      <p class="hero__lead">伊藤のポートフォリオサイトです。</p>
-    </div>
-  </div><!-- // .hero -->
+    <section id="skill" class="skill">
+      <div class="inner animated wow fadeIn">
+        <div class="wrapper">
+          <div class="js-rellax" data-rellax-speed="3" data-rellax-percentage="0.5" data-rellax-zindex="5">🔴</div>
+          <h2 class="title-type01 wow fadeInUp">
+            <span class="en animated wow fadeIn">skill</span>
+            <span class="ja">できること</span>
+          </h2>
+          <div class="skill__container">
+            <ul class="skill__list">
+              <li class="list_item animated wow fadeIn" data-wow-delay="0s">
+                <figure class="list_icon"><img src="./assets/images/skill_01.svg" alt="HTML/CSS"></figure>
+                <p class="list_lead">コーディング</p>
+                <p>HTML/CSS、javaScript（React,Next.js,TypeScript）</p>
+              </li>
+              <li class="list_item list_item--design animated wow fadeIn" data-wow-delay="0.3s">
+                <figure class="list_icon"><img src="./assets/images/skill_02.svg" alt="デザイン"></figure>
+                <p class="list_lead">デザイン</p>
+                <p>WEBサイト、名刺、<br>ショップカード<small>など</small></p>
+              </li>
+              <li class="list_item list_item--photo animated wow fadeIn" data-wow-delay="0.6s">
+                <figure class="list_icon"><img src="./assets/images/skill_03.svg" alt="撮影"></figure>
+                <p class="list_lead">撮影</p>
+                <p>商品写真撮影<small>など</small></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- // .skill -->
 
-  <section id="about" class="about">
-    <h2 class="title-type01">
-      <span class="en">about</span>
-      <span class="ja">私について</span>
-    </h2>
-    <div class="wrapper">
-      <p>aboutのコンテンツが入ります</p>
-    </div>
-  </section><!-- // .about -->
-
-  <section id="works" class="works">
-    <h2 class="title-type01">
-      <span class="en">works</span>
-      <span class="ja">実績</span>
-    </h2>
-    <div class="wrapper">
-      <p>worksのコンテンツが入ります</p>
-    </div>
-  </section><!-- // .works -->
-
-  <section id="skill" class="skill">
-    <h2 class="title-type01">
-      <span class="en">skill</span>
-      <span class="ja">できること</span>
-    </h2>
-    <div class="wrapper">
-      <p>skillのコンテンツが入ります</p>
-    </div>
-  </section><!-- // .skill -->
-
-  <footer class="footer">
-    <nav class="footer__nav">
-      <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#works">works</a></li>
-        <li><a href="#skill">skill</a></li>
-      </ul>
-    </nav>
-    <p class="footer__copy">&copy;chisaki ito</p>
+    <section id="works" class="works">
+      <div class="inner animated wow fadeIn">
+        <div class="wrapper">
+          <h2 class="title-type01 wow fadeInUp">
+            <span class="en animated wow fadeIn">works</span>
+            <span class="ja">実績</span>
+          </h2>
+          <p>worksのコンテンツが入ります</p>
+        </div>
+      </div>
+    </section><!-- // .works -->
+  </article>
+  <footer>
+    <a href="../../index.html">トップページに戻る</a>
   </footer>
+  <!-- Script -->
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" />
+  <!-- wow.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- Rellax.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
