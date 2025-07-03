@@ -519,6 +519,7 @@ section p {
 @media screen and (max-width: 992px) {
 .skill__list {
   flex-wrap: wrap;
+  gap: 20px;
 }
 }
 .skill__list .list_item {
