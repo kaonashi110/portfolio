@@ -266,6 +266,11 @@ small {
 .deco {
   opacity: .7;
 }
+@media screen and (max-width: 480px) {
+.icon {
+  display: none;
+}
+}
 .deco, .icon {
   width: 100px;
   position: absolute;
@@ -368,7 +373,7 @@ small {
   /* background: linear-gradient(135deg,var(--color05) 0%, var(--color04) 50%, #fff 100%); */
 }
 .hero__container {
-  width: 80%;
+  width: 95%;
   max-width: 800px;
   height: 45vh;
   min-height: 350px;
@@ -389,7 +394,6 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .hero__lead {
   font-size: 18px;
@@ -635,6 +639,11 @@ section p {
 }
 
 /* works */
+@media screen and (max-width: 480px) {
+.works .wrapper {
+  padding: 0;
+}
+}
 .works .deco_01 {
   width: 120px;
   top: -140px;
@@ -721,6 +730,11 @@ section p {
 .works__link  {
   text-align: right;
 }
+@media screen and (max-width: 991px) {
+.works__link  {
+  margin: 30px 20px 0 0;
+}
+}
 
 /* books */
 .books .deco_01 {
@@ -734,9 +748,14 @@ section p {
   justify-content: center;
   gap: 40px 50px;
 }
+@media screen and (max-width: 991px) {
+.books__list {
+  gap: 20px 20px;
+}
+}
 .books__list li {
   width: calc((100% - 200px) / 5);
-  min-width: 150px;
+  min-width: 140px;
   aspect-ratio: 15/20;
 }
 @media screen and (min-width: 992px) {
