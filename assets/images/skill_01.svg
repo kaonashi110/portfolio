@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
-  <!-- Generator: Adobe Illustrator 29.6.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 207)  -->
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
   <defs>
     <style>
       .st0 {
-        fill: none;
-        stroke: #00a8a8;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 2px;
+        fill: #ed6b43;
       }
     </style>
   </defs>
-  <path class="st0" d="M18,16l4-4-4-4"/>
-  <path class="st0" d="M6,8l-4,4,4,4"/>
-  <path class="st0" d="M14.5,4l-5,16"/>
+  <path class="st0" d="M0,4s0-2,2-2h12s2,0,2,2v6s0,2-2,2h-4c0,.7,0,1.2.2,1.5h.8c.3,0,.5.2.5.5s-.2.5-.5.5h-6c-.3,0-.5-.2-.5-.5s.2-.5.5-.5h.8c.2-.3.2-.8.2-1.5H2s-2,0-2-2v-6ZM1.4,3.1c-.1,0-.2.2-.3.3,0,.2-.1.4-.1.6v6c0,.3,0,.5.1.6,0,.1.2.2.3.3.2,0,.4.1.5.1h0s12,0,12,0c.3,0,.5,0,.6-.1.1,0,.2-.2.3-.3,0-.2.1-.4.1-.5h0v-6c0-.3,0-.5-.1-.6,0-.1-.2-.2-.3-.3-.2,0-.4-.1-.6-.1H2c-.3,0-.5,0-.6.1"/>
 </svg>
