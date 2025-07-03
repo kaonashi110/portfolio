@@ -17,8 +17,8 @@ var speed = 5500;
 window.onload = function() {
   // Swiper
   var swiper = new Swiper('.js-swiper-works', {
-    spaceBetween: 80,
-    slidesPerView: 1.7,
+    spaceBetween: 50,
+    slidesPerView: 1.5,
     centeredSlides: true,
     breakpoints: {
       768: {
