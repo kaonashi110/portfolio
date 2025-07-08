@@ -586,6 +586,12 @@ section p {
 }
 .skill__detail .wrapper {
   padding: 0 50px;
+  max-width: 1000px;
+}
+@media screen and (min-width: 991px) {
+.skill__detail .wrapper {
+  width: 80%;
+}  
 }
 .skill__detail .detail_item:not(:first-of-type) {
   margin-top: 40px;
@@ -621,6 +627,7 @@ section p {
   align-items: center;
 }
 .skill__detail .detail_list li .title {
+  text-align: left;
   padding: 0 55px 0 20px;
   margin-right: 10px;
   position: relative;
