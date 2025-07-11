@@ -16,36 +16,51 @@ var bar = document.querySelector('.progressbar_in');
 var speed = 5500;
 window.onload = function() {
   // Swiper
-  var swiper = new Swiper('.js-swiper-works', {
-    spaceBetween: 50,
-    slidesPerView: 1.5,
-    centeredSlides: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 80,
+  const slideLength = document.querySelectorAll('.swiper-container .swiper-slide').length
+  if (slideLength > 4) {
+    var swiper = new Swiper('.js-swiper-works', {
+      spaceBetween: 50,
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 80,
+        },
       },
-    },
-    loop: true,
-    autoplay: {
-      delay: speed,
-      disableOnInteraction: false,
-    },
-    loopAdditionalSlides: 1,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        // let num = index + 1;
-        return (
-          '<div class="' +
-          className +
-          " circle-pagination" +
-          '"><div class="circle-pagination_inner"></div></div>'
-        );
+      loop: true,
+      autoplay: {
+        delay: speed,
+        disableOnInteraction: false,
       },
-    },
-  });
+      loopAdditionalSlides: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          // let num = index + 1;
+          return (
+            '<div class="' +
+            className +
+            " circle-pagination" +
+            '"><div class="circle-pagination_inner"></div></div>'
+          );
+        },
+      },
+    });
+  } else {
+    var swiper = new Swiper('.js-swiper-works', {
+      spaceBetween: 50,
+      slidesPerView: 1.5,
+      centeredSlides: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 80,
+        },
+      },
+    });
+  }
 }
 
 const header = document.getElementById('header');
