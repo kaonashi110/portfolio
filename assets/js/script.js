@@ -1,4 +1,4 @@
-// wow.js
+// // wow.js
 new WOW().init();
 
 // rellax.js
@@ -16,10 +16,10 @@ var bar = document.querySelector('.progressbar_in');
 var speed = 5500;
 window.onload = function() {
   // Swiper
-  const slideLength = document.querySelectorAll('.swiper-container .swiper-slide').length
-  if (slideLength > 4) {
+  const slideLength = document.querySelectorAll('.swiper-wrapper .swiper-slide').length
+  if (slideLength > 3) {
     var swiper = new Swiper('.js-swiper-works', {
-      spaceBetween: 50,
+      spaceBetween: 60,
       slidesPerView: 1.5,
       centeredSlides: true,
       breakpoints: {
