@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* title */
+.page-title {
+  font-size: 62px;
+  line-height: 1;
+  font-weight: bold;
+  color: var(--color05);
+  display: flex;
+  align-items: end;
+  gap: 40px;
+  position: relative;
+}
+.page-title .en {
+  letter-spacing: .08em;
+  font-family: var(--fontEn);
+  text-transform: uppercase;
+}
+.page-title .ja {
+  font-size: 20px;
+  color: var(--textColor02);
+  margin-bottom: 10px;
+}
+.page-title::after {
+  content: "";
+  background: linear-gradient(135deg,var(--color05) 0%, var(--color04) 50%, var(--color01) 100%);
+  height: 5px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: -130px;
+  transform: translateY(-50%);
+}
+
+/* works */
+.works__list {
+  display: flex;
+  justify-content: space-between;
+}
+.works__list .item {
+  width: calc((100% - 100px)/3);
+}
+.works__list .item p {
+  margin-top: 24px;
+}

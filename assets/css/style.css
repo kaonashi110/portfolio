@@ -88,6 +88,7 @@ ul {
 figure img {
   width: 100%;
   height: auto;
+  display: block;
 }
 a {
   display: block;
@@ -396,6 +397,7 @@ small {
   background: linear-gradient(135deg, var(--color05), var(--color04), #ffffff);
   background-size: 400% 400%;
   animation: morph 10s ease-in-out infinite, gradientShift 10s ease-in-out infinite;
+  overflow: hidden;
 }
 .hero__title {
   font-size: 68px;
@@ -404,6 +406,11 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+.hero__title {
+  font-size: 290%;
+}
 }
 .hero__lead {
   font-size: 18px;
